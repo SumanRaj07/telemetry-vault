@@ -43,20 +43,7 @@ own computer, with no account, subscription, cloud backend, or external API.
 - **Local read-only API** — optional, localhost-only, token-protected,
   GET-only, rate-limited.
 
-## What is NOT shipped (stated plainly)
 
-- **Browser extension** — not implemented. Browser apps are tracked by
-  foreground time only; tabs and domains are never inferred.
-- **Editor integrations** — not implemented. Editor time is foreground time.
-- **Local AI** — the provider interface exists, but no model ships with the
-  app. Deterministic insights are always available.
-- **Database encryption** — not implemented. The SQLite file is stored
-  unencrypted; use BitLocker until an encrypted option lands.
-- **Windows installer (NSIS)** — requires a Windows machine or Wine; see
-  [Packaging](#packaging). An unpacked Windows build can be produced on
-  Linux (see `release/` notes in FEATURE_STATUS.md).
-
-See **FEATURE_STATUS.md** for the verified vs. pending checklist.
 
 ## Quick start (Windows)
 
