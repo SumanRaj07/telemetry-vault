@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #65a878;
+  --color-deep: #286844;
+  --color-light: #e8f5e9;
+  --color-pale: #f2faf3;
+  --color-page: #f7faf7;
+  --color-border: #e2eae3;
+  --color-ink: #24352a;
+  --color-muted: #718074;
+  --color-success: #2e8b57;
+  --color-warning: #c28a35;
+  --color-danger: #c74646;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-deep);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8d8ca;
+  border-radius: 8px;
+  border: 2px solid var(--color-page);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 7px 10px;
+  width: 100%;
+  color: var(--color-ink);
+}
+input[type="checkbox"] {
+  width: auto;
+  accent-color: var(--color-deep);
+}
